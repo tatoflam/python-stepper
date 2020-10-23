@@ -29,7 +29,8 @@ class stepper:
 		#set enable to high (i.e. power is NOT going to the motor)
 		gpio.output(self.enablePin, True)
 		
-		print("Stepper initialized (step=" + self.stepPin + ", direction=" + self.directionPin + ", enable=" + self.enablePin + ")")
+		#print("Stepper initialized (step=" + self.stepPin + ", direction=" + self.directionPin + ", enable=" + self.enablePin + ")")
+		print("Stepper initialized (step={0}, direction={1}, enable={2}".format(self.stepPin, self.directionPin, self.enablePin))
 	
 	#clears GPIO settings
 	def cleanGPIO(self):
